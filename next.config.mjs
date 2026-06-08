@@ -3,9 +3,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const isGitHubPages = process.env.GITHUB_PAGES === "true";
-const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1] || "";
-const isUserSite = repositoryName.endsWith(".github.io");
-const basePath = isGitHubPages && repositoryName && !isUserSite ? `/${repositoryName}` : "";
+const basePath = "";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ahmed-alaraby.vercel.app"),
+  metadataBase: new URL("https://www.ahmedalaraby.com"),
   title: {
     default: "Ahmed Alaraby - Senior UI/UX Designer",
     template: "%s - Ahmed Alaraby"
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Ahmed Alaraby - Senior UI/UX Designer",
     description:
       "Designing intuitive digital products that solve real business problems across fintech, real estate, government, and enterprise platforms.",
-    url: "https://ahmed-alaraby.vercel.app",
+    url: "https://www.ahmedalaraby.com",
     siteName: "Ahmed Alaraby Portfolio",
     images: [{ url: "/images/og.png", width: 1200, height: 630 }],
     locale: "en_US",
