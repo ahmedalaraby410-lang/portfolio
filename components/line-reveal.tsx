@@ -19,9 +19,9 @@ export function LineReveal({ lines, as = "h2", className = "", delay = 0 }: Line
         <span key={`${line}-${index}`} className="block overflow-hidden pb-[0.06em]">
           <motion.span
             className="block"
-            initial={prefersReducedMotion ? false : { y: "112%", opacity: 0, filter: "blur(12px)" }}
-            animate={prefersReducedMotion ? undefined : { y: "0%", opacity: 1, filter: "blur(0px)" }}
-            transition={{ duration: 0.9, delay: delay + index * 0.1, ease: [0.22, 1, 0.36, 1] }}
+            initial={prefersReducedMotion ? false : { y: "105%", opacity: 0 }}
+            animate={prefersReducedMotion ? undefined : { y: "0%", opacity: 1 }}
+            transition={{ duration: 0.68, delay: delay + index * 0.08, ease: [0.22, 1, 0.36, 1] }}
           >
             {line}
           </motion.span>

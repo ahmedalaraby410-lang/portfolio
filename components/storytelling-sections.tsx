@@ -185,15 +185,13 @@ export function DesignPhilosophySection({ projects }: { projects: Project[] }) {
                     <motion.button
                       type="button"
                       className={`thought-keyword thought-keyword-${concept.size} ${active ? "is-active" : ""} ${connected ? "is-connected" : ""}`}
-                      initial={reducedMotion ? false : { opacity: 0, scale: 0.8, filter: "blur(7px)" }}
-                      whileInView={reducedMotion ? undefined : { opacity: 1, scale: 1, filter: "blur(0px)" }}
-                      animate={reducedMotion ? undefined : { y: [0, -3, 0, 3, 0] }}
+                      initial={reducedMotion ? false : { opacity: 0, scale: 0.88 }}
+                      whileInView={reducedMotion ? undefined : { opacity: 1, scale: 1 }}
                       viewport={{ once: true, margin: "-80px" }}
                       transition={{
                         opacity: { duration: 0.65, delay: 0.3 + index * 0.08 },
                         scale: { duration: 0.65, delay: 0.3 + index * 0.08 },
-                        filter: { duration: 0.65, delay: 0.3 + index * 0.08 },
-                        y: { duration: 8 + index * 0.28, repeat: Infinity, ease: "easeInOut" }
+                        y: { duration: 0.65 }
                       }}
                       onMouseEnter={() => setActiveConceptId(concept.id)}
                       onFocus={() => setActiveConceptId(concept.id)}
@@ -215,8 +213,8 @@ export function DesignPhilosophySection({ projects }: { projects: Project[] }) {
             <div className="thought-context relative flex items-center border-t border-white/10 p-7 sm:p-10 lg:border-t-0">
               <motion.div
                 key={activeConcept.id}
-                initial={reducedMotion ? false : { opacity: 0, x: 14, filter: "blur(7px)" }}
-                animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+                initial={reducedMotion ? false : { opacity: 0, x: 10 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
                 className="w-full"
                 aria-live="polite"

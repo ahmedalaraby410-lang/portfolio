@@ -37,11 +37,11 @@ export function CertificatesSection({ certificates }: { certificates: Certificat
           {visibleCertificates.map((certificate, index) => (
             <motion.article
               key={`${certificate.issuer}-${certificate.title}`}
-              initial={prefersReducedMotion ? false : { opacity: 0, y: 34, filter: "blur(8px)" }}
-              whileInView={prefersReducedMotion ? undefined : { opacity: 1, y: 0, filter: "blur(0px)" }}
+              initial={prefersReducedMotion ? false : { opacity: 0, y: 24 }}
+              whileInView={prefersReducedMotion ? undefined : { opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-70px" }}
               transition={{
-                duration: 0.72,
+                duration: 0.58,
                 delay: Math.min(index * 0.08, 0.24),
                 ease: [0.22, 1, 0.36, 1]
               }}
@@ -56,7 +56,7 @@ export function CertificatesSection({ certificates }: { certificates: Certificat
                   className="object-cover transition duration-700 ease-out group-hover:scale-[1.035]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-white/[0.025]" />
-                <span className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/45 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.2em] text-paper/72 backdrop-blur-xl">
+                <span className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/60 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.2em] text-paper/72 backdrop-blur-md">
                   {certificate.issuer}
                 </span>
               </div>

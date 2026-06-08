@@ -13,13 +13,13 @@ export function SocialPresenceCard({ socials }: { socials: SocialItem[] }) {
 
   return (
     <motion.aside
-      className="social-presence-card relative overflow-hidden rounded-[22px] border border-white/12 bg-black/35 p-5 backdrop-blur-xl"
+      className="social-presence-card relative overflow-hidden rounded-[22px] border border-white/12 bg-black/55 p-5 backdrop-blur-md"
       initial={reducedMotion ? false : { opacity: 0, x: 18, y: 14 }}
-      animate={reducedMotion ? undefined : { opacity: 1, x: 0, y: [0, -4, 0] }}
+      animate={reducedMotion ? undefined : { opacity: 1, x: 0, y: 0 }}
       transition={{
         opacity: { duration: 0.75, delay: 1.05 },
         x: { duration: 0.75, delay: 1.05, ease: [0.22, 1, 0.36, 1] },
-        y: { duration: 6, delay: 1.8, repeat: Infinity, ease: "easeInOut" }
+        y: { duration: 0.7, delay: 0.8, ease: [0.22, 1, 0.36, 1] }
       }}
     >
       <div className="mb-4 flex items-center justify-between gap-4">

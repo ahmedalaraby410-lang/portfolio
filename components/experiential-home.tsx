@@ -60,10 +60,10 @@ function CinematicHero({ profileImage, socials }: { profileImage: string; social
   const resumeUrl = socials.find((item) => item.visible && item.label.toLowerCase().includes("resume"))?.url || "/Ahmed-Alaraby-Resume.pdf";
   const mx = useMotionValue(0.5);
   const my = useMotionValue(0.5);
-  const rotateX = useSpring(useTransform(my, [0, 1], [7, -7]), { stiffness: 90, damping: 22 });
-  const rotateY = useSpring(useTransform(mx, [0, 1], [-9, 9]), { stiffness: 90, damping: 22 });
-  const networkX = useSpring(useTransform(mx, [0, 1], [-9, 9]), { stiffness: 55, damping: 24 });
-  const networkY = useSpring(useTransform(my, [0, 1], [-6, 6]), { stiffness: 55, damping: 24 });
+  const rotateX = useSpring(useTransform(my, [0, 1], [3.5, -3.5]), { stiffness: 150, damping: 28 });
+  const rotateY = useSpring(useTransform(mx, [0, 1], [-4.5, 4.5]), { stiffness: 150, damping: 28 });
+  const networkX = useSpring(useTransform(mx, [0, 1], [-5, 5]), { stiffness: 110, damping: 28 });
+  const networkY = useSpring(useTransform(my, [0, 1], [-3, 3]), { stiffness: 110, damping: 28 });
 
   const onMove = (event: React.PointerEvent<HTMLElement>) => {
     if (prefersReducedMotion) return;
@@ -97,9 +97,9 @@ function CinematicHero({ profileImage, socials }: { profileImage: string; social
               <span key={line} className="block overflow-hidden pb-[0.06em]">
                 <motion.span
                   className="block"
-                  initial={prefersReducedMotion ? false : { y: "112%", opacity: 0, filter: "blur(14px)" }}
-                  animate={prefersReducedMotion ? undefined : { y: "0%", opacity: 1, filter: "blur(0px)" }}
-                  transition={{ duration: 0.95, delay: 0.45 + index * 0.12, ease: [0.22, 1, 0.36, 1] }}
+                  initial={prefersReducedMotion ? false : { y: "106%", opacity: 0 }}
+                  animate={prefersReducedMotion ? undefined : { y: "0%", opacity: 1 }}
+                  transition={{ duration: 0.7, delay: 0.3 + index * 0.1, ease: [0.22, 1, 0.36, 1] }}
                 >
                   {line}
                 </motion.span>
@@ -294,8 +294,8 @@ function HeroSystemBackground({
               r="14"
               fill="#B18D43"
               opacity="0.08"
-              animate={reducedMotion ? undefined : { r: [10, 16, 10], opacity: [0.05, 0.12, 0.05] }}
-              transition={{ duration: 5.5, delay: index * 0.8, repeat: Infinity, ease: "easeInOut" }}
+              animate={reducedMotion ? undefined : { r: [10, 14, 11], opacity: [0.05, 0.1, 0.06] }}
+              transition={{ duration: 2.8, delay: index * 0.18, repeat: 1, ease: "easeInOut" }}
             />
             <circle cx={cx} cy={cy} r="2.8" fill="#B18D43" opacity="0.72" filter="url(#hero-node-glow)" />
             <circle cx={cx} cy={cy} r="1.1" fill="#F7E8C1" opacity="0.92" />
@@ -337,10 +337,10 @@ function WorldProject({ project, index }: { project: Project; index: number }) {
   const prefersReducedMotion = useReducedMotion();
   const mx = useMotionValue(0.5);
   const my = useMotionValue(0.5);
-  const rotateX = useSpring(useTransform(my, [0, 1], [4, -4]), { stiffness: 120, damping: 20 });
-  const rotateY = useSpring(useTransform(mx, [0, 1], [-5, 5]), { stiffness: 120, damping: 20 });
-  const imageX = useTransform(mx, [0, 1], [-18, 18]);
-  const imageY = useTransform(my, [0, 1], [-14, 14]);
+  const rotateX = useSpring(useTransform(my, [0, 1], [2.5, -2.5]), { stiffness: 180, damping: 30 });
+  const rotateY = useSpring(useTransform(mx, [0, 1], [-3, 3]), { stiffness: 180, damping: 30 });
+  const imageX = useTransform(mx, [0, 1], [-10, 10]);
+  const imageY = useTransform(my, [0, 1], [-8, 8]);
   const glowX = useTransform(mx, [0, 1], ["0%", "100%"]);
   const glowY = useTransform(my, [0, 1], ["0%", "100%"]);
   const glowBackground = useMotionTemplate`radial-gradient(circle at ${glowX} ${glowY}, rgba(205,245,106,0.17), rgba(134,231,255,0.07) 30%, transparent 58%)`;
@@ -401,7 +401,7 @@ function WorldProject({ project, index }: { project: Project; index: number }) {
             </motion.div>
             <div className="absolute inset-0 bg-gradient-to-t from-ink/55 via-transparent to-transparent opacity-60" />
             <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between">
-              <span className="rounded-full border border-white/12 bg-ink/35 px-4 py-2 text-xs uppercase tracking-[0.24em] text-paper/64 backdrop-blur-xl">
+              <span className="rounded-full border border-white/12 bg-ink/60 px-4 py-2 text-xs uppercase tracking-[0.24em] text-paper/64 backdrop-blur-md">
                 Enter Case Study
               </span>
               <span className="grid size-12 place-items-center rounded-full bg-paper text-ink transition duration-500 group-hover:rotate-45 group-hover:bg-lime">

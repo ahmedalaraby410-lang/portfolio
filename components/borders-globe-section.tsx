@@ -62,10 +62,10 @@ export function BordersGlobeSection() {
     >
       <div className="relative z-10 mx-auto w-full max-w-[1680px] px-4 sm:px-8">
         <motion.div
-          initial={prefersReducedMotion ? false : { opacity: 0, y: 20, filter: "blur(10px)" }}
-          whileInView={prefersReducedMotion ? undefined : { opacity: 1, y: 0, filter: "blur(0px)" }}
+          initial={prefersReducedMotion ? false : { opacity: 0, y: 16 }}
+          whileInView={prefersReducedMotion ? undefined : { opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.62, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto max-w-3xl text-center"
         >
           <p className="mb-4 text-[10px] uppercase tracking-[0.32em] text-[#B18D43] sm:text-xs">02 · Why I&apos;m Different</p>
@@ -94,7 +94,7 @@ export function BordersGlobeSection() {
                   height="700"
                   initial={prefersReducedMotion ? { width: 1440 } : { width: 0 }}
                   animate={inView ? { width: 1440 } : { width: 0 }}
-                  transition={{ duration: 1.65, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ duration: 1.1, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
                 />
               </clipPath>
             </defs>
@@ -106,7 +106,7 @@ export function BordersGlobeSection() {
               clipPath="url(#map-reveal)"
               initial={prefersReducedMotion ? false : { opacity: 0 }}
               animate={inView ? { opacity: 1 } : { opacity: 0 }}
-              transition={{ duration: 0.9, ease: "easeOut" }}
+              transition={{ duration: 0.65, ease: "easeOut" }}
             />
 
             <g fill="none">

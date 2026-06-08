@@ -8,9 +8,10 @@ export function SmoothScroll() {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const lenis = new Lenis({
-      duration: 1.15,
+      duration: 0.72,
       smoothWheel: true,
-      wheelMultiplier: 0.82
+      wheelMultiplier: 1.04,
+      touchMultiplier: 1.15
     });
 
     let frame = 0;
