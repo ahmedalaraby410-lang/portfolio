@@ -1,0 +1,35 @@
+[
+  {
+    "id": "product-analytics-ai",
+    "title": "Product Analytics and AI",
+    "issuer": "University of Virginia",
+    "description": "Product analytics, experimentation, and applied AI methods for making stronger product decisions.",
+    "date": "Completed",
+    "image": "/certificates/virginia-product-analytics.svg",
+    "link": "/certificates/virginia-product-analytics.svg",
+    "visible": true,
+    "order": 1
+  },
+  {
+    "id": "route-ui-ux",
+    "title": "UI/UX Design",
+    "issuer": "Route Academy",
+    "description": "Practical interface design, user experience foundations, prototyping, and product workflow thinking.",
+    "date": "Completed",
+    "image": "/certificates/route-ui-ux.svg",
+    "link": "/certificates/route-ui-ux.svg",
+    "visible": true,
+    "order": 2
+  },
+  {
+    "id": "google-ux-design",
+    "title": "Google UX Design Certificate",
+    "issuer": "Google",
+    "description": "End-to-end UX practice covering research, problem definition, wireframing, testing, and polished interfaces.",
+    "date": "Completed",
+    "image": "/certificates/google-ux-design.svg",
+    "link": "/certificates/google-ux-design.svg",
+    "visible": true,
+    "order": 3
+  }
+]

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220">
+  <g transform="translate(42 54)" fill="none" stroke="#F3C74F" stroke-width="12" stroke-linejoin="round">
+    <path d="M14 10h72l34 50-34 50H14l34-50Z"/>
+    <path d="M48 60h72"/>
+  </g>
+  <text x="194" y="110" fill="#F7F7F5" font-family="Arial, sans-serif" font-size="54" font-weight="700">plex</text>
+  <text x="198" y="143" fill="#A8AAA9" font-family="Arial, sans-serif" font-size="15" letter-spacing="2.2">BY ROCKWELL AUTOMATION</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220">
+  <g transform="translate(48 48)">
+    <circle cx="62" cy="62" r="52" fill="none" stroke="#58A7AE" stroke-width="8"/>
+    <path d="M62 22v80M34 46c20 6 36 22 42 48M90 46C70 52 54 68 48 94" fill="none" stroke="#58A7AE" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <text x="184" y="94" fill="#F7F7F5" font-family="Arial, sans-serif" font-size="34" font-weight="700">KING KHALID</text>
+  <text x="184" y="134" fill="#A8AAA9" font-family="Arial, sans-serif" font-size="24" letter-spacing="4">FOUNDATION</text>
+</svg>

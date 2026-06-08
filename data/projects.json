@@ -1,0 +1,128 @@
+[
+  {
+    "id": "sphinx",
+    "slug": "sphinx",
+    "title": "Sphinx",
+    "category": "Home Improvement & E-Commerce Ecosystem",
+    "description": "Sphinx is a digital commerce ecosystem that helps customers discover, visualize, and purchase home finishing and furnishing products while connecting them with engineers, studios, and operational teams through a seamless end-to-end experience.",
+    "overview": "Sphinx was created to modernize the home finishing journey by bringing product discovery, interior inspiration, project planning, and purchasing into a single ecosystem. The platform consists of customer-facing applications, engineering tools, and operational dashboards that work together to simplify a traditionally fragmented process.",
+    "problem": "Customers often struggle to visualize how products will look in their spaces, compare suitable options, and coordinate with professionals throughout their home finishing journey. At the same time, engineers and operational teams face challenges managing projects, communicating with customers, and maintaining consistency across multiple touchpoints.",
+    "solution": "I designed a connected digital ecosystem that enables customers to explore products, gain design inspiration, collaborate with engineers, and manage their projects from a unified experience. The solution bridges the gap between commerce and interior design by combining product discovery, room visualization, project management, and operational workflows within a scalable platform.",
+    "process": "The design process focused on understanding the needs of customers, engineers, and operational stakeholders. Through user journey mapping, ecosystem planning, information architecture development, and iterative prototyping, I established a cohesive experience that aligned business objectives with user needs. Special attention was given to simplifying complex workflows while maintaining consistency across multiple products and platforms.",
+    "outcome": "The final product established a scalable ecosystem that connects customers, engineers, studios, and operational teams through a unified digital experience. By streamlining product discovery, project collaboration, and operational management, Sphinx created a more efficient and engaging journey that supports both business growth and improved customer satisfaction.",
+    "coverImage": "/uploads/1780846936206-frame-2147223805.png",
+    "gallery": [
+      "/uploads/1780846944275-3.png",
+      "/uploads/1780846944275-6.png",
+      "/uploads/1780846944275-ipad-pro.png",
+      "/uploads/1780846944275-mockup-ribbon-4.png",
+      "/uploads/1780846944275-mockup-ribbon-11.png"
+    ],
+    "behanceUrl": "https://www.behance.net/gallery/244547619/Sphinx-Engineering-Service-Management-Ecosystem",
+    "tags": [
+      "Product Design",
+      "UX Strategy",
+      "E-Commerce",
+      "Home Finishing",
+      "Interior Design",
+      "Mobile App",
+      "Web App",
+      "Dashboard",
+      "Design System",
+      "User Experience",
+      "SaaS",
+      "Construction Tech"
+    ],
+    "year": "2026",
+    "client": "Sphinx",
+    "featured": true,
+    "orbitContributions": []
+  },
+  {
+    "id": "shub",
+    "slug": "shub",
+    "title": "SHUB",
+    "category": "Management",
+    "description": "SHUB is a centralized operations dashboard that enables teams to manage engineers, monitor project progress, oversee studio activities, and streamline day-to-day operational workflows from a single platform.",
+    "overview": "SHUB was designed to serve as the operational backbone of the Sphinx ecosystem. The platform connects administrators, managers, and engineers through a unified dashboard that provides visibility into projects, tasks, studio performance, team management, and operational insights.",
+    "problem": "Operations teams relied on fragmented tools and manual processes to manage engineers, track project status, and coordinate studio activities. This resulted in poor visibility, communication gaps, delayed decisions, and inefficient resource allocation across teams.",
+    "solution": "Designed a centralized dashboard that consolidates project management, engineer oversight, task tracking, studio operations, analytics, and team collaboration into a single intuitive experience. The solution provides real-time visibility and actionable insights for faster operational decision-making.",
+    "process": "The project began with understanding the operational structure of the organization and identifying the needs of both management and engineering teams. Through workflow mapping, information architecture planning, and iterative design exploration, I established a scalable dashboard framework that balanced large amounts of data with ease of use. Multiple concepts were refined to ensure the platform could support both current operations and future growth.",
+    "outcome": "The final solution transformed SHUB into a centralized operational hub capable of supporting engineering management, project execution, and organizational oversight. By consolidating workflows into a single platform, the dashboard improved visibility across teams, simplified day-to-day management tasks, and created a stronger foundation for scalable operational growth throughout the ecosystem.",
+    "coverImage": "/uploads/1780844320177-cover.png",
+    "gallery": [
+      "/uploads/1780844327009-mockup-21.png",
+      "/uploads/1780844327009-mockup-23.png",
+      "/uploads/1780844327010-mockup-24.png",
+      "/uploads/1780844327010-mockup-2487.png",
+      "/uploads/1780844327010-mockup-scenge-3.png"
+    ],
+    "behanceUrl": "https://www.behance.net/gallery/245340499/SHUB-Project-Operations-Dashboard",
+    "tags": [],
+    "year": "2026",
+    "client": "Dawood ",
+    "featured": true,
+    "orbitContributions": []
+  },
+  {
+    "id": "debtbox",
+    "slug": "debtbox",
+    "title": "Debtbox",
+    "category": "fintech",
+    "description": "If it's for a dashboard card or section:\nDebts\nTrack and manage all outstanding balances, due dates, and payment status in one place.\nOther short options:\nMonitor and organize your debts with ease.\nStay on top of payments and outstanding balances.\nView, track, and manage debts efficiently.\nKeep your debt records organized and up to date.\nA clear overview of all active and pending debts.",
+    "overview": "Debt Box is a debt management platform that simplifies how merchants record, track, and collect customer debts. The platform provides separate experiences for merchants and customers, creating a transparent and organized repayment journey.",
+    "problem": "Traditional debt tracking relies on spreadsheets, paper records, and manual follow-ups, leading to missed payments, poor visibility, and inefficient communication between merchants and customers.",
+    "solution": "Designed a dual-sided platform that enables merchants to create and manage debts while allowing customers to view outstanding balances, payment schedules, and repayment history in a clear and accessible interface.",
+    "process": "Conducted competitor analysis and market research.\nDefined merchant and customer personas.\nMapped end-to-end debt management workflows.\nCreated wireframes and user flows.\nDesigned high-fidelity mobile and web experiences.\nIterated based on business and compliance requirements.",
+    "outcome": "Streamlined debt management for both merchants and customers.\nReduced operational complexity through centralized debt tracking.\nImproved transparency and visibility of repayment status.\nCreated a scalable platform ready for regulatory and banking requirements.\nDelivered an intuitive user experience that simplifies debt creation, monitoring, and collection.",
+    "coverImage": "/uploads/1780843289957-frame-2147224257.png",
+    "gallery": [
+      "/uploads/1780843295260-frame-2147224277.png",
+      "/uploads/1780843295260-free-ipad-pro-mockup-on-textured-fabric-and-wooden-surface-mockuuups-studio.png",
+      "/uploads/1780843295261-free-iphone-air-mockup-on-rock-mockuuups-studio.png"
+    ],
+    "behanceUrl": "https://www.behance.net/gallery/247168063/DebtBox-A-Dual-Sided-Debt-Management-Platform",
+    "tags": [],
+    "year": "2026",
+    "client": "Saidi",
+    "featured": true,
+    "orbitContributions": [
+      {
+        "stage": "problem",
+        "note": "Defined the operational friction behind fragmented debt records and unclear repayment status."
+      },
+      {
+        "stage": "research",
+        "note": "Mapped merchant and customer expectations across a sensitive financial workflow."
+      },
+      {
+        "stage": "strategy",
+        "note": "Balanced transparency, collection efficiency, and future banking requirements."
+      },
+      {
+        "stage": "design-system",
+        "note": "Created reusable patterns for debt states, repayment schedules, and two-sided account experiences."
+      },
+      {
+        "stage": "testing",
+        "note": "Iterated the experience around clarity, trust, and faster comprehension of repayment status."
+      },
+      {
+        "stage": "insights",
+        "note": "Turned recurring debt behaviors and trust concerns into clear product opportunities."
+      },
+      {
+        "stage": "wireframes",
+        "note": "Structured merchant and customer flows before visual design reduced complexity across both experiences."
+      },
+      {
+        "stage": "prototype",
+        "note": "Validated repayment, debt creation, and status interactions before committing to final patterns."
+      },
+      {
+        "stage": "launch",
+        "note": "Prepared a scalable product foundation for operational rollout and future regulatory integration."
+      }
+    ]
+  }
+]

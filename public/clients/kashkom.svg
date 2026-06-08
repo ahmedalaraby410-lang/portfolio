@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220">
+  <g transform="translate(48 50)">
+    <path d="M28 10h78a20 20 0 0 1 20 20v70a20 20 0 0 1-20 20H28A20 20 0 0 1 8 100V30A20 20 0 0 1 28 10Z" fill="#E9685A"/>
+    <path d="m46 42 44 46M90 42 46 88" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <text x="204" y="129" fill="#F7F7F5" font-family="Arial, sans-serif" font-size="55" font-weight="700">Kashkom</text>
+</svg>

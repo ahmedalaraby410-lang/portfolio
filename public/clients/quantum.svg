@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220">
+  <g transform="translate(42 42)">
+    <circle cx="68" cy="68" r="54" fill="none" stroke="#6FD4C5" stroke-width="12"/>
+    <path d="M68 28a40 40 0 1 1-28 68" fill="none" stroke="#2D8A80" stroke-width="12" stroke-linecap="round"/>
+    <path d="m92 94 30 30" stroke="#6FD4C5" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <text x="190" y="105" fill="#F7F7F5" font-family="Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="1">QUANTUM</text>
+  <text x="192" y="142" fill="#A8AAA9" font-family="Arial, sans-serif" font-size="15" letter-spacing="4">PROMOTING NETWORK</text>
+</svg>

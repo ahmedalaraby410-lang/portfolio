@@ -1,0 +1,37 @@
+[
+  {
+    "id": "linkedin",
+    "label": "LinkedIn",
+    "url": "https://www.linkedin.com/in/ahmed-a-81621a1b3/",
+    "visible": true,
+    "order": 1
+  },
+  {
+    "id": "behance",
+    "label": "Behance",
+    "url": "https://www.behance.net/ahmedalaraby",
+    "visible": true,
+    "order": 2
+  },
+  {
+    "id": "x-twitter",
+    "label": "X / Twitter",
+    "url": "https://x.com/alaraby_s",
+    "visible": true,
+    "order": 3
+  },
+  {
+    "id": "resume",
+    "label": "Resume",
+    "url": "/resume/1780851703945-ahmedalarabyseniorproductdesignerresume.pdf",
+    "visible": true,
+    "order": 4
+  },
+  {
+    "id": "email",
+    "label": "Email",
+    "url": "ahmedalaraby410@gmail.com",
+    "visible": true,
+    "order": 5
+  }
+]

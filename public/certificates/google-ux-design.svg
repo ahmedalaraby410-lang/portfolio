@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#121318"/><stop offset="1" stop-color="#050506"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect x="64" y="64" width="1072" height="622" rx="18" fill="none" stroke="#fff" stroke-opacity=".12"/>
+  <g transform="translate(96 91)" font-family="Arial, sans-serif" font-weight="700" font-size="46">
+    <text fill="#f6f2ea">G</text>
+  </g>
+  <text x="148" y="128" fill="#f6f2ea" font-family="Arial, sans-serif" font-size="28" font-weight="600">GOOGLE</text>
+  <text x="96" y="256" fill="#f6f2ea" font-family="Arial, sans-serif" font-size="18" letter-spacing="6" opacity=".52">PROFESSIONAL CERTIFICATE</text>
+  <text x="96" y="365" fill="#f6f2ea" font-family="Arial, sans-serif" font-size="68" font-weight="600">Google UX Design</text>
+  <text x="96" y="426" fill="#f6f2ea" font-family="Arial, sans-serif" font-size="23" opacity=".56">Research · Ideation · Wireframes · Testing</text>
+  <path d="M96 520h474" stroke="#B18D43" stroke-width="2"/>
+  <g transform="translate(820 220)">
+    <circle cx="126" cy="126" r="124" fill="none" stroke="#fff" stroke-opacity=".1"/>
+    <path d="M126 26a100 100 0 0 1 86 49M226 126a100 100 0 0 1-43 82M126 226a100 100 0 0 1-86-49M26 126a100 100 0 0 1 43-82" fill="none" stroke="#B18D43" stroke-width="10" stroke-linecap="round" opacity=".72"/>
+    <circle cx="126" cy="126" r="28" fill="#B18D43" opacity=".18"/>
+    <circle cx="126" cy="126" r="6" fill="#B18D43"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220">
+  <g transform="translate(48 45)">
+    <path d="M65 8c34 0 58 27 52 60-6 34-26 55-52 55S19 102 13 68C7 35 31 8 65 8Z" fill="none" stroke="#79C9A2" stroke-width="9"/>
+    <path d="M37 61c12 0 21 8 23 22-15 1-25-6-29-19M93 61c-12 0-21 8-23 22 15 1 25-6 29-19" fill="#79C9A2"/>
+  </g>
+  <text x="202" y="131" fill="#F7F7F5" font-family="Arial, sans-serif" font-size="65" font-weight="600" letter-spacing="8">ALIEN</text>
+</svg>

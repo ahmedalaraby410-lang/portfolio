@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#111216"/>
+      <stop offset="1" stop-color="#060607"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="1020" cy="106" r="170" fill="#B18D43" opacity=".08" filter="url(#glow)"/>
+  <rect x="64" y="64" width="1072" height="622" rx="18" fill="none" stroke="#fff" stroke-opacity=".12"/>
+  <path d="M64 158h1072M190 64v94" stroke="#fff" stroke-opacity=".1"/>
+  <g fill="#B18D43">
+    <circle cx="113" cy="111" r="18"/><path d="M104 111h18M113 102v18" stroke="#070708" stroke-width="3"/>
+  </g>
+  <text x="154" y="120" fill="#f6f2ea" font-family="Arial, sans-serif" font-size="25" font-weight="600">UNIVERSITY OF VIRGINIA</text>
+  <text x="96" y="258" fill="#f6f2ea" font-family="Arial, sans-serif" font-size="18" letter-spacing="6" opacity=".55">CERTIFICATE OF COMPLETION</text>
+  <text x="96" y="349" fill="#f6f2ea" font-family="Arial, sans-serif" font-size="51" font-weight="600">Product Analytics</text>
+  <text x="96" y="410" fill="#f6f2ea" font-family="Arial, sans-serif" font-size="51" font-weight="600">&amp; Artificial Intelligence</text>
+  <path d="M96 501h420" stroke="#B18D43" stroke-width="2"/>
+  <text x="96" y="548" fill="#f6f2ea" font-family="Arial, sans-serif" font-size="18" opacity=".5">PROFESSIONAL DEVELOPMENT PROGRAM</text>
+  <g transform="translate(900 500)" fill="none" stroke="#fff" stroke-opacity=".16">
+    <circle cx="75" cy="75" r="73"/><circle cx="75" cy="75" r="48"/><path d="M75 2v146M2 75h146"/>
+  </g>
+</svg>

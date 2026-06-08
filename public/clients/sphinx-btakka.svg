@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220">
+  <g transform="translate(42 48)">
+    <path d="M12 104 66 10l54 94Z" fill="none" stroke="#D3A94C" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M38 78h56L66 30Z" fill="#D3A94C" opacity=".32"/>
+  </g>
+  <text x="190" y="104" fill="#F7F7F5" font-family="Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="2">SPHINX</text>
+  <text x="194" y="142" fill="#A8AAA9" font-family="Arial, sans-serif" font-size="18" letter-spacing="6">BTAKKA</text>
+</svg>
