@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowUpRight, Award } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 import type { Certificate } from "@/data/certificates";
+import { withBasePath } from "@/lib/base-path";
 
 export function CertificatesSection({ certificates }: { certificates: Certificate[] }) {
   const prefersReducedMotion = useReducedMotion();
@@ -48,7 +49,7 @@ export function CertificatesSection({ certificates }: { certificates: Certificat
             >
               <div className="relative aspect-[16/10] overflow-hidden rounded-[17px] border border-white/10 bg-[#0a0a0c]">
                 <Image
-                  src={certificate.image}
+                  src={withBasePath(certificate.image)}
                   alt={`${certificate.title} certificate preview`}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
@@ -75,7 +76,7 @@ export function CertificatesSection({ certificates }: { certificates: Certificat
                 <p className="mt-4 flex-1 text-sm leading-6 text-paper/54">{certificate.description}</p>
 
                 <a
-                  href={certificate.link}
+                  href={withBasePath(certificate.link)}
                   target="_blank"
                   rel="noreferrer"
                   className="mt-7 inline-flex w-fit items-center gap-2 text-sm font-medium text-paper/76 transition duration-300 hover:text-[#D4B66F]"

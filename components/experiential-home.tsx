@@ -25,6 +25,7 @@ import type { Client } from "@/data/clients";
 import type { ProfileSettings } from "@/data/profile";
 import type { SocialItem } from "@/data/socials";
 import type { Project } from "@/lib/types";
+import { withBasePath } from "@/lib/base-path";
 
 export function ExperientialHome({
   projects,
@@ -123,7 +124,7 @@ function CinematicHero({ profileImage, socials }: { profileImage: string; social
             >
               {profileImage ? (
                 <Image
-                  src={profileImage}
+                  src={withBasePath(profileImage)}
                   alt="Ahmed Alaraby"
                   fill
                   unoptimized
@@ -152,7 +153,7 @@ function CinematicHero({ profileImage, socials }: { profileImage: string; social
             <MagneticButton href="#featured-work">Enter Work</MagneticButton>
             <MagneticButton href="#contact" variant="secondary">Contact</MagneticButton>
             <a
-              href={resumeUrl}
+              href={withBasePath(resumeUrl)}
               className="magnetic inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-5 py-3 text-sm font-medium text-paper transition duration-300 hover:border-lime/50 hover:text-lime"
               data-cursor="Resume"
             >
@@ -242,7 +243,7 @@ function HeroSystemBackground({
       <rect width="1440" height="720" fill="url(#hero-system-depth)" />
 
       <motion.image
-        href="/world-network-map.svg"
+        href={withBasePath("/world-network-map.svg")}
         x="250"
         y="34"
         width="1260"
@@ -391,7 +392,7 @@ function WorldProject({ project, index }: { project: Project; index: number }) {
           <div className="relative z-10 min-h-[340px] overflow-hidden rounded-[26px] border border-white/10 bg-paper/5">
             <motion.div className="absolute inset-[-5%]" style={prefersReducedMotion ? undefined : { x: imageX, y: imageY }}>
               <Image
-                src={project.coverImage}
+                src={withBasePath(project.coverImage)}
                 alt={`${project.title} cover`}
                 fill
                 sizes="(max-width: 1024px) 100vw, 58vw"
@@ -461,7 +462,7 @@ function ContactScene({ profileImage }: { profileImage: string }) {
               <Mail size={16} />
               hello@ahmedalaraby.com
             </a>
-            <a href="/Ahmed-Alaraby-Resume.pdf" className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-3 text-sm font-medium text-ink/72 transition hover:border-ink hover:text-ink" data-cursor="Resume">
+            <a href={withBasePath("/Ahmed-Alaraby-Resume.pdf")} className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-3 text-sm font-medium text-ink/72 transition hover:border-ink hover:text-ink" data-cursor="Resume">
               <Download size={16} />
               Download Resume
             </a>

@@ -8,6 +8,7 @@ import { MagneticButton } from "@/components/magnetic-button";
 import { Reveal } from "@/components/reveal";
 import { SiteNav } from "@/components/site-nav";
 import { getProject, getProjects } from "@/lib/projects";
+import { withBasePath } from "@/lib/base-path";
 
 type ProjectPageProps = {
   params: Promise<{ slug: string }>;
@@ -56,7 +57,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <main>
         <section className="container-x min-h-screen pb-12 pt-32">
           <Reveal>
-            <Link href="/#work" className="mb-10 inline-flex items-center gap-2 text-sm text-paper/55 transition hover:text-lime">
+            <Link href="/#featured-work" className="mb-10 inline-flex items-center gap-2 text-sm text-paper/55 transition hover:text-lime">
               <ArrowLeft size={16} />
               Back to work
             </Link>
@@ -81,7 +82,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </Reveal>
           <Reveal delay={0.08} className="mt-12">
             <div data-image-reveal className="relative aspect-[16/9] overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.04]">
-              <Image src={project.coverImage} alt={`${project.title} hero image`} fill priority sizes="100vw" className="object-cover" />
+              <Image src={withBasePath(project.coverImage)} alt={`${project.title} hero image`} fill priority sizes="100vw" className="object-cover" />
             </div>
           </Reveal>
         </section>
@@ -123,7 +124,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             {project.gallery.map((image, index) => (
               <Reveal key={image} delay={index * 0.06}>
                 <div data-image-reveal className="relative aspect-[4/3] overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.04]">
-                  <Image src={image} alt={`${project.title} gallery ${index + 1}`} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+                  <Image src={withBasePath(image)} alt={`${project.title} gallery ${index + 1}`} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
                 </div>
               </Reveal>
             ))}

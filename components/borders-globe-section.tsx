@@ -2,6 +2,7 @@
 
 import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
+import { withBasePath } from "@/lib/base-path";
 
 type Marker = {
   name: string;
@@ -99,7 +100,7 @@ export function BordersGlobeSection() {
             </defs>
 
             <motion.image
-              href="/world-network-map.svg"
+              href={withBasePath("/world-network-map.svg")}
               width="1440"
               height="700"
               clipPath="url(#map-reveal)"

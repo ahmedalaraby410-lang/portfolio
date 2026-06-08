@@ -3,6 +3,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 import type { SocialItem } from "@/data/socials";
+import { withBasePath } from "@/lib/base-path";
 
 export function SocialPresenceCard({ socials }: { socials: SocialItem[] }) {
   const reducedMotion = useReducedMotion();
@@ -32,7 +33,7 @@ export function SocialPresenceCard({ socials }: { socials: SocialItem[] }) {
           return (
             <a
               key={social.id}
-              href={social.url}
+              href={withBasePath(social.url)}
               target={external ? "_blank" : undefined}
               rel={external ? "noreferrer" : undefined}
               className="social-presence-link group flex min-h-10 items-center justify-between gap-4 border-t border-white/[0.07] text-sm text-paper/68"

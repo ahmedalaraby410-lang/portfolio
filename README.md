@@ -91,6 +91,72 @@ Use `/admin` for project content. For personal details like name, headline, bio,
 
 For persistent project edits and uploads on Vercel, create a Vercel Blob store and add `BLOB_READ_WRITE_TOKEN` to the project environment variables. Without that token, the admin uses local files for development.
 
+## Deploy to GitHub Pages
+
+GitHub Pages hosts static files only. The public portfolio and all project detail pages are supported, but the `/admin` page and `/api/*` routes cannot run on GitHub Pages. They remain available locally and on a server platform such as Vercel.
+
+The repository includes `.github/workflows/deploy-pages.yml`. Every push to `main` builds a static export and deploys the `out` directory automatically.
+
+### First-time GitHub setup
+
+1. Create an empty repository on GitHub. Do not add a README, `.gitignore`, or license from GitHub.
+2. In this project folder, initialize Git and push the project:
+
+```bash
+git init
+git add .
+git commit -m "Prepare portfolio for GitHub Pages"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git push -u origin main
+```
+
+3. Open the repository on GitHub.
+4. Go to **Settings → Pages**.
+5. Under **Build and deployment**, select **GitHub Actions** as the source.
+6. Open the **Actions** tab and wait for **Deploy portfolio to GitHub Pages** to finish.
+7. Return to **Settings → Pages** and use **Visit site**.
+
+For a normal project repository, the URL is:
+
+```text
+https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/
+```
+
+If the repository is named `YOUR_USERNAME.github.io`, the URL is:
+
+```text
+https://YOUR_USERNAME.github.io/
+```
+
+The workflow detects both URL formats and configures Next.js asset paths automatically.
+
+### Updating the GitHub Pages website
+
+Use the Admin page locally:
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000/admin`, make your changes, then commit the updated files:
+
+```bash
+git add data public
+git commit -m "Update portfolio content"
+git push
+```
+
+GitHub Actions will rebuild and republish the website. Project uploads in `public/uploads/` are intentionally tracked because GitHub Pages cannot access local or Vercel Blob uploads at runtime.
+
+### GitHub Pages limitations
+
+- The deployed `/admin` route is intentionally omitted.
+- Content cannot be saved directly from the live GitHub Pages website.
+- New projects require a local Admin update followed by a Git push.
+- Vercel remains the recommended deployment when live Admin editing and uploads are required.
+
 ## Production Notes
 
 - The site includes SEO metadata, Open Graph tags, project metadata, image optimization, smooth scrolling, cursor interactions, magnetic buttons, text reveals, image reveals, and scroll-triggered GSAP motion.

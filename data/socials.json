@@ -30,7 +30,7 @@
   {
     "id": "email",
     "label": "Email",
-    "url": "ahmedalaraby410@gmail.com",
+    "url": "mailto:ahmedalaraby410@gmail.com",
     "visible": true,
     "order": 5
   }

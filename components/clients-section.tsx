@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import type { Client } from "@/data/clients";
+import { withBasePath } from "@/lib/base-path";
 
 function ClientCard({ client }: { client: Client }) {
   return (
@@ -12,7 +13,7 @@ function ClientCard({ client }: { client: Client }) {
     >
       <div className="absolute inset-x-5 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent transition duration-500 group-hover:via-[#B18D43]/45" />
       <Image
-        src={client.logo}
+        src={withBasePath(client.logo)}
         alt={`${client.name} logo`}
         width={520}
         height={200}

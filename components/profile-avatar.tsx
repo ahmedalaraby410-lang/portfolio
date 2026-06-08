@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withBasePath } from "@/lib/base-path";
 
 export function ProfileAvatar({
   image,
@@ -13,7 +14,7 @@ export function ProfileAvatar({
     <div className={`profile-avatar group relative grid shrink-0 place-items-center overflow-hidden rounded-full border border-[#B18D43]/35 bg-white/[0.045] text-paper ${className}`}>
       {image ? (
         <Image
-          src={image}
+          src={withBasePath(image)}
           alt="Ahmed Alaraby"
           fill
           unoptimized
