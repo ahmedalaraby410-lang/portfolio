@@ -458,9 +458,9 @@ function ContactScene({ profileImage }: { profileImage: string }) {
             Let&apos;s build something people trust.
           </h2>
           <div className="relative mt-10 flex flex-wrap gap-3">
-            <a href="mailto:hello@ahmedalaraby.com" className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-medium text-paper transition hover:bg-lime hover:text-ink" data-cursor="Email">
+            <a href="mailto:ahmedalaraby410@gmail.com" className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-medium text-paper transition hover:bg-lime hover:text-ink" data-cursor="Email">
               <Mail size={16} />
-              hello@ahmedalaraby.com
+              ahmedalaraby410@gmail.com
             </a>
             <a href={withBasePath("/Ahmed-Alaraby-Resume.pdf")} className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-3 text-sm font-medium text-ink/72 transition hover:border-ink hover:text-ink" data-cursor="Resume">
               <Download size={16} />

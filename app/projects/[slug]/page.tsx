@@ -139,7 +139,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 Have a similar product challenge?
               </h2>
               <div className="mt-8">
-                <MagneticButton href="mailto:hello@ahmedalaraby.com">Start a Conversation</MagneticButton>
+                <MagneticButton href="mailto:ahmedalaraby410@gmail.com">Start a Conversation</MagneticButton>
               </div>
             </div>
           </Reveal>
