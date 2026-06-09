@@ -50,14 +50,14 @@ export function ExperientialHome({
       <ClientsSection clients={clients} />
       <CertificatesSection certificates={certificates} />
       <AboutScene profileImage={profile.image} />
-      <ContactScene profileImage={profile.image} />
+      <ContactScene profileImage={profile.image} socials={socials} />
     </main>
   );
 }
 
 function CinematicHero({ profileImage, socials }: { profileImage: string; socials: SocialItem[] }) {
   const prefersReducedMotion = useReducedMotion();
-  const resumeUrl = socials.find((item) => item.visible && item.label.toLowerCase().includes("resume"))?.url || "/Ahmed-Alaraby-Resume.pdf";
+  const resumeUrl = socials.find((item) => item.visible && item.label.toLowerCase().includes("resume"))?.url || "/resume/1780851703945-ahmedalarabyseniorproductdesignerresume.pdf";
   const mx = useMotionValue(0.5);
   const my = useMotionValue(0.5);
   const rotateX = useSpring(useTransform(my, [0, 1], [3.5, -3.5]), { stiffness: 150, damping: 28 });
@@ -444,7 +444,14 @@ function AboutScene({ profileImage }: { profileImage: string }) {
   );
 }
 
-function ContactScene({ profileImage }: { profileImage: string }) {
+function ContactScene({ profileImage, socials }: { profileImage: string; socials: SocialItem[] }) {
+  const findSocial = (label: string) =>
+    socials.find((item) => item.visible && item.label.toLowerCase().includes(label))?.url;
+  const emailUrl = findSocial("email") || "mailto:ahmedalaraby410@gmail.com";
+  const resumeUrl = findSocial("resume") || "/resume/1780851703945-ahmedalarabyseniorproductdesignerresume.pdf";
+  const linkedinUrl = findSocial("linkedin") || "https://www.linkedin.com/in/ahmed-a-81621a1b3/";
+  const whatsappUrl = "https://wa.me/201029466632?text=Hi%20Ahmed%2C%20I%27d%20like%20to%20discuss%20a%20product%20design%20opportunity.";
+
   return (
     <section id="contact" className="container-x pb-10 pt-24 sm:pt-36">
       <Reveal>
@@ -458,19 +465,19 @@ function ContactScene({ profileImage }: { profileImage: string }) {
             Let&apos;s build something people trust.
           </h2>
           <div className="relative mt-10 flex flex-wrap gap-3">
-            <a href="mailto:ahmedalaraby410@gmail.com" className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-medium text-paper transition hover:bg-lime hover:text-ink" data-cursor="Email">
+            <a href={emailUrl} className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-medium text-paper transition hover:bg-lime hover:text-ink" data-cursor="Email">
               <Mail size={16} />
               ahmedalaraby410@gmail.com
             </a>
-            <a href={withBasePath("/Ahmed-Alaraby-Resume.pdf")} className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-3 text-sm font-medium text-ink/72 transition hover:border-ink hover:text-ink" data-cursor="Resume">
+            <a href={withBasePath(resumeUrl)} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-3 text-sm font-medium text-ink/72 transition hover:border-ink hover:text-ink" data-cursor="Resume">
               <Download size={16} />
               Download Resume
             </a>
-            <a href="https://www.linkedin.com/in/ahmed-alaraby/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-3 text-sm font-medium text-ink/72 transition hover:border-ink hover:text-ink">
+            <a href={linkedinUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-3 text-sm font-medium text-ink/72 transition hover:border-ink hover:text-ink">
               <Linkedin size={16} />
               LinkedIn
             </a>
-            <a href="https://wa.me/?text=Hi%20Ahmed%2C%20I%27d%20like%20to%20discuss%20a%20product%20design%20opportunity." target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-3 text-sm font-medium text-ink/72 transition hover:border-ink hover:text-ink">
+            <a href={whatsappUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-3 text-sm font-medium text-ink/72 transition hover:border-ink hover:text-ink">
               <MessageCircle size={16} />
               WhatsApp
             </a>
