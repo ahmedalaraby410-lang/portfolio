@@ -1,5 +1,46 @@
 [
   {
+    "id": "aerie",
+    "slug": "aerie",
+    "title": "Aerie",
+    "category": "Architecture & Real Estate Website",
+    "description": "A luxury architecture website concept inspired by the relationship between modern living and nature. The experience combines immersive storytelling, elegant typography, and cinematic visuals to showcase architectural spaces in a refined and engaging way.",
+    "overview": "This project explores how digital experiences can communicate the emotional value of architecture beyond floor plans and property listings. The website was designed to highlight modern architectural spaces through visual storytelling, allowing visitors to discover projects gradually through immersive layouts, smooth navigation, and carefully crafted interactions.",
+    "problem": "Most architecture and real estate websites focus heavily on technical information while failing to communicate the atmosphere, lifestyle, and emotional connection that architectural spaces create. This often results in experiences that feel transactional rather than inspiring.",
+    "solution": "I designed a premium web experience that places visual storytelling at the center of the journey. Large-scale imagery, minimal layouts, elegant typography, and nature-inspired aesthetics work together to create an immersive experience that allows visitors to explore architecture as a lifestyle rather than simply a collection of buildings.",
+    "process": "The project began with researching luxury architecture brands and nature-inspired design principles. I explored visual directions focused on minimalism, cinematic storytelling, and immersive browsing experiences. Through iterative wireframing and UI exploration, I established a design system that balanced large visual content with readability, creating a seamless flow between storytelling sections and architectural showcases.",
+    "outcome": "The final concept successfully transformed a traditional architecture presentation into a modern digital experience that emphasizes emotion, atmosphere, and exploration. The project demonstrates how thoughtful UX and visual storytelling can elevate architecture websites, creating stronger engagement while reinforcing a premium brand perception.",
+    "coverImage": "/uploads/1781010885865-mockup-19.png",
+    "gallery": [
+      "/uploads/1781010896129-3.png",
+      "/uploads/1781010896130-5.png",
+      "/uploads/1781011558110-mockup-26.png",
+      "/uploads/1781011655262-mockup-17.png",
+      "/uploads/1781011713292-mockup-30.png"
+    ],
+    "behanceUrl": "https://www.behance.net/gallery/245812061/Modern-Nature-Architecture-Website",
+    "tags": [
+      "UI Design",
+      "UX Design",
+      "Web Design",
+      "Architecture",
+      "Real Estate",
+      "Luxury Website",
+      "Storytelling",
+      "Landing Page",
+      "Minimal Design",
+      "Visual Design",
+      "Figma",
+      "Responsive Design",
+      "User Experience",
+      "Architecture Website"
+    ],
+    "year": "2026",
+    "client": "Aerie",
+    "featured": true,
+    "orbitContributions": []
+  },
+  {
     "id": "sphinx",
     "slug": "sphinx",
     "title": "Sphinx",
@@ -10,7 +51,7 @@
     "solution": "I designed a connected digital ecosystem that enables customers to explore products, gain design inspiration, collaborate with engineers, and manage their projects from a unified experience. The solution bridges the gap between commerce and interior design by combining product discovery, room visualization, project management, and operational workflows within a scalable platform.",
     "process": "The design process focused on understanding the needs of customers, engineers, and operational stakeholders. Through user journey mapping, ecosystem planning, information architecture development, and iterative prototyping, I established a cohesive experience that aligned business objectives with user needs. Special attention was given to simplifying complex workflows while maintaining consistency across multiple products and platforms.",
     "outcome": "The final product established a scalable ecosystem that connects customers, engineers, studios, and operational teams through a unified digital experience. By streamlining product discovery, project collaboration, and operational management, Sphinx created a more efficient and engaging journey that supports both business growth and improved customer satisfaction.",
-    "coverImage": "/uploads/1780846936206-frame-2147223805.png",
+    "coverImage": "/uploads/1781011816832-frame-2147223805.png",
     "gallery": [
       "/uploads/1780846944275-3.png",
       "/uploads/1780846944275-6.png",
@@ -49,7 +90,7 @@
     "solution": "Designed a centralized dashboard that consolidates project management, engineer oversight, task tracking, studio operations, analytics, and team collaboration into a single intuitive experience. The solution provides real-time visibility and actionable insights for faster operational decision-making.",
     "process": "The project began with understanding the operational structure of the organization and identifying the needs of both management and engineering teams. Through workflow mapping, information architecture planning, and iterative design exploration, I established a scalable dashboard framework that balanced large amounts of data with ease of use. Multiple concepts were refined to ensure the platform could support both current operations and future growth.",
     "outcome": "The final solution transformed SHUB into a centralized operational hub capable of supporting engineering management, project execution, and organizational oversight. By consolidating workflows into a single platform, the dashboard improved visibility across teams, simplified day-to-day management tasks, and created a stronger foundation for scalable operational growth throughout the ecosystem.",
-    "coverImage": "/uploads/1780844320177-cover.png",
+    "coverImage": "/uploads/1781011971610-mockup-ribbon-11.png",
     "gallery": [
       "/uploads/1780844327009-mockup-21.png",
       "/uploads/1780844327009-mockup-23.png",
