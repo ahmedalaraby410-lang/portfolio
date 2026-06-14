@@ -19,6 +19,7 @@ import { CertificatesSection } from "@/components/certificates-section";
 import { ClientsSection } from "@/components/clients-section";
 import { ProfileAvatar } from "@/components/profile-avatar";
 import { SocialPresenceCard } from "@/components/social-presence-card";
+import { OriginStorySection } from "@/components/origin-story-section";
 import { CareerJourneySection, DesignPhilosophySection } from "@/components/storytelling-sections";
 import type { Certificate } from "@/data/certificates";
 import type { Client } from "@/data/clients";
@@ -44,11 +45,12 @@ export function ExperientialHome({
     <main>
       <CinematicHero profileImage={profile.image} socials={socials} />
       <BordersGlobeSection />
-      <ImmersiveWork projects={projects} />
       <DesignPhilosophySection projects={projects} />
-      <CareerJourneySection />
       <ClientsSection clients={clients} />
+      <ImmersiveWork projects={projects} />
+      <CareerJourneySection />
       <CertificatesSection certificates={certificates} />
+      <OriginStorySection />
       <AboutScene profileImage={profile.image} />
       <ContactScene profileImage={profile.image} socials={socials} />
     </main>
@@ -90,7 +92,7 @@ function CinematicHero({ profileImage, socials }: { profileImage: string; social
             animate={prefersReducedMotion ? undefined : { opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
           >
-            Senior Product Designer
+            Senior UI/UX Designer
           </motion.p>
           <motion.h1 className="max-w-[11ch] text-[clamp(5.2rem,15vw,16.5rem)] font-semibold leading-[0.76] tracking-[-0.075em] text-balance">
             {["Ahmed", "Alaraby"].map((line, index) => (
@@ -117,26 +119,31 @@ function CinematicHero({ profileImage, socials }: { profileImage: string; social
           <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-[#B18D43]/70 to-transparent" />
           <div className="mb-7 grid gap-4 sm:grid-cols-[minmax(150px,0.72fr)_minmax(210px,1fr)] sm:items-stretch">
             <motion.div
-              className="hero-identity-portrait relative min-h-52 overflow-hidden rounded-[22px] border border-white/10 bg-white/[0.025]"
+              className="hero-profile-stack relative overflow-hidden rounded-[22px] border border-white/10 bg-black/40"
               initial={prefersReducedMotion ? false : { opacity: 0, scale: 0.95 }}
               animate={prefersReducedMotion ? undefined : { opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.95, ease: [0.22, 1, 0.36, 1] }}
             >
-              {profileImage ? (
-                <Image
-                  src={withBasePath(profileImage)}
-                  alt="Ahmed Alaraby"
-                  fill
-                  unoptimized
-                  sizes="240px"
-                  className="object-cover transition duration-700 ease-out hover:scale-105"
-                />
-              ) : (
-                <div className="grid h-full place-items-center text-4xl font-semibold tracking-[0.08em] text-[#D4B66F]">AA</div>
-              )}
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent px-4 pb-4 pt-12">
-                <p className="text-sm font-medium text-paper">Ahmed Alaraby</p>
-                <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-paper/45">Egypt · Available globally</p>
+              <div className="hero-identity-portrait relative h-full min-h-[21rem] overflow-hidden bg-white/[0.025]">
+                {profileImage ? (
+                  <Image
+                    src={withBasePath(profileImage)}
+                    alt="Ahmed Alaraby"
+                    fill
+                    unoptimized
+                    sizes="240px"
+                    className="object-cover transition duration-700 ease-out hover:scale-105"
+                  />
+                ) : (
+                  <div className="grid h-full place-items-center text-4xl font-semibold tracking-[0.08em] text-[#D4B66F]">AA</div>
+                )}
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/78 to-transparent px-4 pb-4 pt-20">
+                  <p className="text-sm font-medium text-paper">Ahmed Alaraby</p>
+                  <div className="mt-3 border-l border-[#B18D43]/55 pl-2.5">
+                    <p className="text-[9px] font-medium uppercase tracking-[0.14em] text-[#D4B66F]">Product Analytics &amp; AI</p>
+                    <p className="mt-1 text-[8px] uppercase tracking-[0.15em] text-[#B18D43]/70">University of Virginia</p>
+                  </div>
+                </div>
               </div>
             </motion.div>
             <SocialPresenceCard socials={socials} />
@@ -313,7 +320,7 @@ function ImmersiveWork({ projects }: { projects: Project[] }) {
     <section id="featured-work" className="relative py-24 sm:py-36">
       <div className="container-x mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
         <Reveal>
-          <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#B18D43]">03 · What I&apos;ve Built</p>
+          <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#B18D43]">05 · What I&apos;ve Built</p>
           <h2 className="max-w-4xl text-5xl font-semibold leading-[0.92] tracking-[-0.055em] sm:text-7xl">
             Featured work with real pressure behind it.
           </h2>
@@ -422,7 +429,7 @@ function AboutScene({ profileImage }: { profileImage: string }) {
         <Reveal>
           <div>
             <ProfileAvatar image={profileImage} className="mb-7 size-28 sm:size-36" />
-            <p className="text-xs uppercase tracking-[0.32em] text-[#B18D43]">08 · The Person</p>
+            <p className="text-xs uppercase tracking-[0.32em] text-[#B18D43]">09 · The Person</p>
           </div>
         </Reveal>
         <div>
@@ -458,7 +465,7 @@ function ContactScene({ profileImage, socials }: { profileImage: string; socials
         <div className="relative overflow-hidden rounded-[36px] border border-white/10 bg-paper p-8 text-ink sm:p-12 lg:p-16">
           <div className="absolute -right-20 -top-20 size-80 rounded-full bg-lime/35 blur-3xl" />
           <div className="relative mb-5 flex items-center justify-between gap-5">
-            <p className="text-xs uppercase tracking-[0.32em] text-ink/50">09 · Let&apos;s Work Together</p>
+            <p className="text-xs uppercase tracking-[0.32em] text-ink/50">10 · Let&apos;s Work Together</p>
             <ProfileAvatar image={profileImage} className="size-16 border-ink/15 bg-ink/5 text-ink" />
           </div>
           <h2 className="relative max-w-5xl text-5xl font-semibold leading-[0.92] tracking-[-0.06em] sm:text-8xl">

@@ -102,7 +102,7 @@ export function DesignPhilosophySection({ projects }: { projects: Project[] }) {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#B18D43]">04 · How I Think</p>
+            <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#B18D43]">03 · How I Think</p>
             <h2 className="max-w-2xl text-5xl font-semibold leading-[0.94] tracking-[-0.055em] sm:text-7xl">
               Most designers think about screens.
               <span className="mt-3 block text-[#D4B66F]">I think about outcomes.</span>
@@ -280,7 +280,7 @@ export function CareerJourneySection() {
 
       <div className="container-x relative mb-20 grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-end sm:mb-28">
         <div>
-          <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#B18D43]">05 · The Journey</p>
+          <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#B18D43]">06 · The Journey</p>
           <h2 className="max-w-2xl text-5xl font-semibold leading-[0.94] tracking-[-0.055em] sm:text-7xl">
             Built year by year.
           </h2>

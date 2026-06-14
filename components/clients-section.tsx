@@ -67,7 +67,7 @@ export function ClientsSection({ clients }: { clients: Client[] }) {
           className="mb-10 grid gap-5 border-b border-white/10 pb-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end"
         >
           <div>
-            <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#B18D43]">06 · Who Trusts Me</p>
+            <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#B18D43]">04 · Who Trusts Me</p>
             <h2 className="max-w-3xl text-4xl font-semibold leading-[0.96] tracking-[-0.05em] sm:text-6xl">
               Selected Clients &amp; Companies
             </h2>

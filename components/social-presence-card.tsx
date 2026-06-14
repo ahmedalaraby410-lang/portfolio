@@ -52,7 +52,7 @@ export function SocialPresenceCard({ socials }: { socials: SocialItem[] }) {
       </nav>
 
       <p className="mt-5 border-t border-white/[0.07] pt-4 text-[11px] leading-5 text-paper/36">
-        Open to product design opportunities worldwide.
+        Open to UI/UX design opportunities worldwide.
       </p>
     </motion.aside>
   );
